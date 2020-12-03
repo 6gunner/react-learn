@@ -11,7 +11,7 @@ import TestFowrardRefPage from "./pages/testForwardRef/index2";
 import TestUseCustomHookPage from "./pages/testUseCustomHook";
 import TestLinguiPage from "./pages/testLingui";
 
-import { messages } from "./locales/en/messages.js";
+import { messages } from "./locales/cs/messages.js";
 import { ThemeContext } from "./pages/testUseContext/context-manager";
 const themes = {
   light: {
@@ -23,8 +23,8 @@ const themes = {
     background: "#222222",
   },
 };
-i18n.load("en", messages);
-i18n.activate("en");
+i18n.load("cs", messages);
+i18n.activate("cs");
 function App() {
   const [theme, setTheme] = useState(themes.light);
   const changeTheme = () => {

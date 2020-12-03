@@ -1,3 +1,8 @@
 {
-  "Message Inbox": "我的信箱"
+  "Current locale: {0}": "当前语言:{0}",
+  "Image caption": "图片说明",
+  "Message Inbox": "我的信箱",
+  "My name is {name}": "我的名字叫{name}",
+  "Sell all unread messages  or <0>mark them</0> as read.": "查看所有未读邮件 或者 <0>标记为已读</0>",
+  "{messageCount, plural, =0 {There're no messages} one {There's # message in your inbox.} other {There're # messages in your inbox.}}": ""
 }

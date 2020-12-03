@@ -1,12 +1,17 @@
 import React, { useState } from "react";
-import { Trans } from "@lingui/macro";
+import { Trans, Plural, t } from "@lingui/macro";
+import { withI18n } from "@lingui/react";
 
-const Inbox = () => {
-  const messages = useState([]);
+const Inbox = ({ i18n }) => {
+  debugger;
+
+  const [messages, setMessages] = useState([]);
   const messageCount = messages.length;
 
-  const markAsRead = () => {
-    console.log("");
+  const name = "keyang";
+
+  const markAsRead = (e) => {
+    console.log("我被点击了");
   };
 
   return (
@@ -14,15 +19,34 @@ const Inbox = () => {
       <h1>
         <Trans>Message Inbox</Trans>
       </h1>
+      <h2>
+        <Trans>My name is {name}</Trans>
+      </h2>
+      <h3>
+        <img src={require("./logo192.png")} alt={t`Image caption`} />
+      </h3>
+      <span>
+        <Trans>Current locale: {i18n.locale}</Trans>
+      </span>
       <p>
-        Sell all unread messages {" or "}
-        <a onClick={markAsRead}>mark them</a> as read.
+        <Trans>
+          Sell all unread messages {" or "}
+          <a href="javascript:;" onClick={markAsRead}>
+            mark them
+          </a>{" "}
+          as read.
+        </Trans>
       </p>
       <p>
-        {messageCount === 1
-          ? `There is ${messageCount} message in your inbox`
-          : `There are ${messageCount} messages in your inbox.`}
+        <Plural
+          value={messageCount}
+          _0="There're no messages"
+          one="There's # message in your inbox."
+          other="There're # messages in your inbox."
+        />
       </p>
     </div>
   );
 };
+
+export default withI18n()(Inbox);

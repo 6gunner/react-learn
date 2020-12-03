@@ -1,3 +1,8 @@
 {
-  "Message Inbox": "Message Inbox"
+  "Current locale: {0}": "Current locale: {0}",
+  "Image caption": "Image caption",
+  "Message Inbox": "Message Inbox",
+  "My name is {name}": "My name is {name}",
+  "Sell all unread messages  or <0>mark them</0> as read.": "Sell all unread messages  or <0>mark them</0> as read.",
+  "{messageCount, plural, =0 {There're no messages} one {There's # message in your inbox.} other {There're # messages in your inbox.}}": "{messageCount, plural, =0 {There're no messages} one {There's # message in your inbox.} other {There're # messages in your inbox.}}"
 }
