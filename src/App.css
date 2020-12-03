@@ -1,0 +1,13 @@
+:global .main1 {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main2 {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

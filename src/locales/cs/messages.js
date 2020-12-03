@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"Message Inbox":"\u6211\u7684\u4FE1\u7BB1"}};
