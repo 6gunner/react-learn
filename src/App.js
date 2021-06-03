@@ -1,30 +1,31 @@
-import React, { useState } from "react";
-import { i18n } from "@lingui/core";
-import { I18nProvider } from "@lingui/react";
+import React, { useState } from 'react';
+import { i18n } from '@lingui/core';
+import { I18nProvider } from '@lingui/react';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import TestUseEffectPage from "./pages/testUseEffect";
-import TestUseReducerPage from "./pages/testUseReducer";
-import TestUseContextPage from "./pages/testUseContext";
-import TestFowrardRefPage from "./pages/testForwardRef/index2";
-import TestUseCustomHookPage from "./pages/testUseCustomHook";
-import TestLinguiPage from "./pages/testLingui";
+import TestUseEffectPage from './pages/testUseEffect';
+import TestUseReducerPage from './pages/testUseReducer';
+import TestUseContextPage from './pages/testUseContext';
+import TestFowrardRefPage from './pages/testForwardRef/index2';
+import TestUseCustomHookPage from './pages/testUseCustomHook';
+import TestLinguiPage from './pages/testLingui';
+import TestFormValidatePage from './pages/testFormValidate';
 
-import { messages } from "./locales/cs/messages.js";
-import { ThemeContext } from "./pages/testUseContext/context-manager";
+import { messages } from './locales/cs/messages.js';
+import { ThemeContext } from './pages/testUseContext/context-manager';
 const themes = {
   light: {
-    foreground: "#000000",
-    background: "#eeeeee",
+    foreground: '#000000',
+    background: '#eeeeee',
   },
   dark: {
-    foreground: "#ffffff",
-    background: "#222222",
+    foreground: '#ffffff',
+    background: '#222222',
   },
 };
-i18n.load("cs", messages);
-i18n.activate("cs");
+i18n.load('cs', messages);
+i18n.activate('cs');
 function App() {
   const [theme, setTheme] = useState(themes.light);
   const changeTheme = () => {
@@ -41,6 +42,7 @@ function App() {
             <Route path="/forwardRef" component={TestFowrardRefPage} />
             <Route path="/useCustomHook" component={TestUseCustomHookPage} />
             <Route path="/lingui" component={TestLinguiPage} />
+            <Route path="/form" component={TestFormValidatePage} />
           </Switch>
         </Router>
       </ThemeContext.Provider>

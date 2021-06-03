@@ -1,0 +1,25 @@
+.form {
+  .formItem {
+    width: 500px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    .formItemLabel {
+      display: block;
+      margin: 0 10px;
+      min-width: 100px;
+    }
+    .formItemInput {
+      width: 300px;
+      height: 34px;
+      line-height: 30px;
+    }
+  }
+
+  .submitBtn {
+    width: 200px;
+    height: 40px;
+    margin: auto 20px;
+  }
+}
