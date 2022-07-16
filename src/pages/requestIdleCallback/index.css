@@ -1,0 +1,63 @@
+.container {
+  border: 1px solid #ccc;
+  width: 500px;
+  height: auto;
+  margin: 10px auto;
+  padding: 20px;
+}
+.wrapper {
+  width: 400px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 2px black;
+  display: block;
+  overflow: auto;
+}
+#progress {
+  width: 100%;
+  padding-top: 6px;
+}
+.button {
+  padding-top: 2px;
+  padding-bottom: 4px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+  background-color: darkgreen;
+}
+.counter {
+  text-align: right;
+  padding-top: 4px;
+  float: right;
+}
+.logBox {
+  margin-top: 16px;
+  width: 400px;
+  height: 500px;
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 2px black;
+}
+
+.logHeader {
+  margin: 0;
+  padding: 0 6px 4px;
+  height: 22px;
+  background-color: lightblue;
+  border-bottom: 1px solid black;
+  border-radius: 6px 6px 0 0;
+}
+
+#log {
+  padding: 6px;
+  overflow: auto;
+  overflow-y: scroll;
+  width: 388px;
+  height: 460px;
+}

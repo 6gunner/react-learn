@@ -11,6 +11,8 @@ import TestFowrardRefPage from './pages/testForwardRef/index2';
 import TestUseCustomHookPage from './pages/testUseCustomHook';
 import TestLinguiPage from './pages/testLingui';
 import TestFormValidatePage from './pages/testFormValidate';
+import TestRequestIdleCallback from './pages/requestIdleCallback';
+import TestRenderPropsPage from './pages/testRenderProps';
 
 import { messages } from './locales/cs/messages.js';
 import { ThemeContext } from './pages/testUseContext/context-manager';
@@ -43,6 +45,11 @@ function App() {
             <Route path="/useCustomHook" component={TestUseCustomHookPage} />
             <Route path="/lingui" component={TestLinguiPage} />
             <Route path="/form" component={TestFormValidatePage} />
+            <Route path="/renderProps" component={TestRenderPropsPage} />
+            <Route
+              path="/requestIdleCallback"
+              component={TestRequestIdleCallback}
+            />
           </Switch>
         </Router>
       </ThemeContext.Provider>
