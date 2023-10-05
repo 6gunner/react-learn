@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FancyInput = React.forwardRef((props, ref) => {
   const innerRef = React.useRef();
   React.useImperativeHandle(ref, () => {
     return {
-      value: innerRef.current.value,
+      // value: innerRef.current.value,
       focus: () => innerRef.current.focus(),
     };
   });
@@ -12,12 +12,22 @@ const FancyInput = React.forwardRef((props, ref) => {
 });
 
 function Main() {
-  const ref = React.createRef();
+  const ref = React.useRef();
   React.useEffect(() => {
-    console.log(ref);
-    ref.current.focus();
+    console.log("ref...");
   }, [ref]);
-  return <FancyInput ref={ref} />;
+  const [data, setData] = useState(0);
+  const handleClick = () => {
+    setData((data) => (data = data + 1));
+    ref.current.focus();
+  };
+  return (
+    <div>
+      <FancyInput ref={ref} />
+      <button onClick={handleClick}>输入</button>
+      <span>{data}</span>
+    </div>
+  );
 }
 
 export default Main;

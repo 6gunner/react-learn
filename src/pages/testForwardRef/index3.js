@@ -1,20 +1,43 @@
-import React from 'react';
+import React, { useImpreative } from "react";
 
-const FancyButton = React.forwardRef((props, ref) => (
-    <button ref={ref} className="FancyButton" onClick={() => {console.log('我被点击了')}}>
+const FancyButton = React.forwardRef((props, ref) => {
+  useImpreative(ref, () => {
+    return {
+      focus() {
+        console.log("I am focused");
+      },
+    };
+  });
+
+  return (
+    <button
+      ref={ref}
+      className="FancyButton"
+      onClick={() => {
+        console.log("我被点击了");
+      }}
+    >
       {props.children}
     </button>
-  ));
+  );
+});
 
 function Main() {
-  const ref = React.createRef();
+  const childRef = React.useRef();
+
+  const handleClick = () => {
+    // 调用子组件的方法
+    childRef.current.childMethod();
+  };
+
   React.useEffect(() => {
-    console.log('ref')
-    ref.current && ref.current.click();
-  }, [ref]);
-  return (
-    <FancyButton ref={ref}>Forward Button</FancyButton>
-  )
+    return (
+      <div>
+        <FancyButton ref={childRef}>Forward Button</FancyButton>;
+        <button onClick={handleClick}>调用子组件</button>
+      </div>
+    );
+  });
 }
 
-export default Main
+export default Main;

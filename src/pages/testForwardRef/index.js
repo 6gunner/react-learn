@@ -12,6 +12,7 @@ function logProps(Component) {
       return <Component ref={abc} {...rest}></Component>;
     }
   }
+  // function组件不支持ref，需要使用forwardRef来接收ref
   return React.forwardRef((props, ref) => {
     return <LogPropsComponent {...props} abc={ref}></LogPropsComponent>;
   });
