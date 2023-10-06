@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FancyInput = React.forwardRef((props, ref) => {
+export const FancyInput = React.forwardRef((props, ref) => {
   const innerRef = React.useRef();
   React.useImperativeHandle(ref, () => {
     return {

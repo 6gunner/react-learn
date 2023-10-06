@@ -3,8 +3,6 @@ import { Trans, Plural, t } from "@lingui/macro";
 import { withI18n } from "@lingui/react";
 
 const Inbox = ({ i18n }) => {
-  debugger;
-
   const [messages, setMessages] = useState([]);
   const messageCount = messages.length;
 

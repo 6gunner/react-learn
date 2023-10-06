@@ -18,7 +18,7 @@ function logProps(Component) {
   });
 }
 
-class FancyButton extends React.Component {
+export class FancyButton extends React.Component {
   focus() {
     console.log("focus");
   }
