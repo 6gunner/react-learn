@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import TestUseEffectPage from "./pages/testUseEffect";
+import TestLifeCyclePage from "./pages/testLifeCycle";
 import TestUseReducerPage from "./pages/testUseReducer";
 import TestUseContextPage from "./pages/testUseContext";
 import TestFowrardRefPage from "./pages/testForwardRef/index";
@@ -39,22 +40,29 @@ function App() {
     <I18nProvider i18n={i18n}>
       <ThemeContext.Provider value={{ theme, changeTheme }}>
         <Router>
-          <Switch>
-            <Route path="/useEffect" component={TestUseEffectPage} />
-            <Route path="/useReducer" component={TestUseReducerPage} />
-            <Route path="/useContext" component={TestUseContextPage} />
-            <Route path="/forwardRef" component={TestFowrardRefPage} />
-            <Route path="/useCustomHook" component={TestUseCustomHookPage} />
-            <Route path="/lingui" component={TestLinguiPage} />
-            <Route path="/form" component={TestFormValidatePage} />
-            <Route path="/renderProps" component={TestRenderPropsPage} />
-            <Route
-              path="/requestIdleCallback"
-              component={TestRequestIdleCallback}
-            />
-            <Route path="/history" component={TestHistoryPage}></Route>
-            <Route path="/event" component={TestEventPage}></Route>
-          </Switch>
+          <Suspense fallback={<div>loading...</div>}>
+            <Switch>
+              <Route path="/lifeCycle" component={TestLifeCyclePage} />
+              <Route path="/useEffect" component={TestUseEffectPage} />
+              <Route path="/useReducer" component={TestUseReducerPage} />
+              <Route path="/useContext" component={TestUseContextPage} />
+              <Route path="/forwardRef" component={TestFowrardRefPage} />
+              <Route path="/useCustomHook" component={TestUseCustomHookPage} />
+              <Route path="/lingui" component={TestLinguiPage} />
+              <Route path="/form" component={TestFormValidatePage} />
+              <Route path="/renderProps" component={TestRenderPropsPage} />
+              <Route
+                path="/requestIdleCallback"
+                component={TestRequestIdleCallback}
+              />
+              <Route path="/history" component={TestHistoryPage}></Route>
+              <Route path="/event" component={TestEventPage}></Route>
+              <Route
+                path="/setState"
+                component={React.lazy(() => import("./pages/testSetState"))}
+              ></Route>
+            </Switch>
+          </Suspense>
         </Router>
       </ThemeContext.Provider>
     </I18nProvider>
