@@ -1,0 +1,53 @@
+<svg width="1920" height="822" viewBox="0 0 1920 822" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_197)">
+<rect width="1920" height="822" fill="white"/>
+<path d="M1384.09 655.5L1384.09 -0.5H1845.93L1845.93 655.5H1494.87H1384.09Z" fill="#9AE23D"/>
+<path d="M1384.09 822.269L1384.09 690.975L996.326 -0.499841L-0.224359 -0.499878L-0.224282 822.269L1219.81 822.269L1384.09 822.269Z" fill="#9AE23D"/>
+<mask id="mask0_6_197" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1383" y="-1" width="464" height="657">
+<path d="M1383.59 554.518L1383.59 -0.00012207H1846.15L1846.15 656H1464.62L1383.59 554.518Z" fill="#CEF17B"/>
+</mask>
+<g mask="url(#mask0_6_197)">
+<g opacity="0.4">
+<rect x="1475.84" y="182.213" width="205.09" height="321.038" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1475.84" y="29.4647" width="205.09" height="152.749" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1475.84" y="-123.284" width="205.09" height="152.749" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1681.24" y="503.251" width="205.09" height="152.749" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1681.24" y="182.213" width="205.09" height="152.749" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1270.75" y="182.213" width="205.09" height="321.038" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1681.24" y="-123.284" width="396.63" height="626.535" stroke="#AFEB71" stroke-width="17.6"/>
+<rect x="1681.24" y="182.213" width="396.63" height="321.038" stroke="#AFEB71" stroke-width="17.6"/>
+<ellipse cx="1184.96" cy="-40.7043" rx="292.216" ry="222.918" stroke="#AFEB71" stroke-width="17.6"/>
+</g>
+</g>
+<g opacity="0.4">
+<mask id="mask1_6_197" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="-1" width="1386" height="824">
+<path d="M1384.09 822.269L1384.09 690.975L996.326 -0.499971L-0.224359 -0.500006L-0.224284 822.269L1219.81 822.269L1384.09 822.269Z" fill="#CEF17B"/>
+<path d="M949.754 79.0107L1304.58 711.747L1304.58 742.758L79.2864 742.758L79.2864 79.0107L949.754 79.0107Z" stroke="#E7FFAF" stroke-opacity="0.6" stroke-width="159.022"/>
+</mask>
+<g mask="url(#mask1_6_197)">
+<g opacity="0.3">
+<rect x="140.602" y="395.416" width="205.09" height="410.317" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="140.602" y="200.189" width="205.09" height="195.228" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="140.602" y="4.96106" width="205.09" height="195.228" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="346" y="805.733" width="205.09" height="195.228" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="346" y="395.416" width="205.09" height="195.228" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="1163.47" y="600.575" width="205.09" height="205.158" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="-64.4872" y="395.416" width="205.09" height="410.317" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="551.397" y="805.733" width="402.534" height="124.145" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="346" y="4.96106" width="396.63" height="800.772" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="346" y="395.416" width="396.63" height="410.317" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="953.05" y="395.416" width="415.51" height="410.317" stroke="#E3FFEA" stroke-width="17.6"/>
+<rect x="953.049" y="269.84" width="415.509" height="125.576" stroke="#E3FFEA" stroke-width="17.6"/>
+<ellipse cx="208.137" cy="207.473" rx="208.137" ry="207.473" transform="matrix(-0.758668 0.651478 -0.670322 -0.74207 1250.03 618.937)" stroke="#E3FFEA" stroke-width="17.6"/>
+<ellipse cx="-150.282" cy="110.506" rx="292.216" ry="284.91" stroke="#E3FFEA" stroke-width="17.6"/>
+<path d="M953.684 602.585L1112.19 466.469" stroke="#E3FFEA" stroke-width="17.6"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_6_197">
+<rect width="1920" height="822" fill="white"/>
+</clipPath>
+</defs>
+</svg>
