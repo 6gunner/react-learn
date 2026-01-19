@@ -1,18 +1,15 @@
-import HeroSection from "./components/HeroSection";
-import Header from "./components/Header";
-
+import { Route, Routes } from "react-router";
 import "./App.css";
-import VirtualList from "./components/VirtualList";
+
+import IntersectionObserverDemo from "./pages/IntersectionObserverDemo";
+import VirtualListDemo from "./pages/VirtualListDemo";
 
 function App() {
-  const itemList = Array.from({ length: 5000 }, (_, index) => `Item ${index + 1}`);
-
   return (
-    <div>
-      <>
-        <VirtualList list={itemList}></VirtualList>
-      </>
-    </div>
+    <Routes>
+      <Route path="/intersection-observer" element={<IntersectionObserverDemo />} />
+      <Route path="/virtual-list" element={<VirtualListDemo />} />
+    </Routes>
   );
 }
 

@@ -1,11 +1,14 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import 'virtual:svg-icons-register';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "virtual:svg-icons-register";
+import { BrowserRouter } from "react-router";
 
-import App from './App.tsx';
+import App from "./App.tsx";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
